@@ -1,0 +1,143 @@
+.booking {
+  padding: 20px;
+
+  border: 1px solid #dedada;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+
+  &-top {
+    background: black;
+    padding: 15px;
+    margin: -21px;
+  }
+  .btn-confirm {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 13px;
+  }
+
+  label {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  &-price {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &-card-price {
+    color: #000;
+  }
+
+  &-per-night {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  &-note-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  &-note-text {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  .should-login-btn-container {
+    text-align: center;
+    margin-bottom: 10px;
+
+    .btn-login {
+      text-align: center;
+      font-size: 15px;
+      padding: 15px;
+
+      &:hover,
+      &:focus {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// MODAL
+.booking-modal {
+  .title {
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .buttons {
+    margin: 15px 0px;
+  }
+
+  em {
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+// Calendar booking
+
+.daterangepicker td.in-range {
+  background-color: red $mainColor;
+}
+
+.daterangepicker td.active {
+  background-color: $mainColor !important;
+}
+
+// Get User Bookings
+
+#userBookings {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .card-block {
+    padding: 20px;
+  }
+
+  .card-header {
+    text-transform: capitalize;
+  }
+
+  .card-title {
+    font-size: 0.9em;
+  }
+
+  .booking {
+    &-desc {
+      font-size: 14px;
+    }
+
+    &-days {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    &-price-value {
+      font-weight: 700;
+    }
+  }
+
+  .btn-main {
+    color: white;
+    font-size: 14px;
+  }
+}

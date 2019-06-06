@@ -1,0 +1,146 @@
+#rentalDetails {
+  .upper-section {
+    img {
+      width: 100%;
+    }
+
+    margin-bottom: 30px;
+  }
+
+  .details-section {
+    color: $black;
+    .rental {
+      &-type {
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+
+        @include sm {
+          font-size: 12px;
+        }
+      }
+
+      .username {
+        display: block;
+        font-size: 13px;
+        font-weight: 300;
+        text-align: center;
+      }
+
+      &-owner {
+        float: right;
+
+        img {
+          height: 50px;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      &-title {
+        margin-bottom: 5px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #484848;
+
+        @include sm {
+          font-size: 0.9rem;
+          padding-top: 10px;
+          padding-bottom: 2px;
+        }
+      }
+
+      &-city {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+
+      &-room-info {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 1rem;
+
+        @include sm {
+          font-size: 0.75rem;
+        }
+
+        span {
+          margin-right: 10px;
+        }
+
+        i {
+          margin-right: 2px;
+        }
+      }
+
+      &-description {
+        font-weight: 300;
+        margin-bottom: 30px;
+
+        @include sm {
+          font-size: 0.8rem;
+        }
+      }
+
+      &-amenities {
+        .title {
+          margin-bottom: 10px;
+          font-weight: 700;
+          font-size: 1.4rem;
+
+          @include sm {
+            font-size: 1rem;
+          }
+        }
+        span {
+          display: block;
+          margin-bottom: 15px;
+          font-weight: 300;
+
+          @include sm {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  .review-card {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+
+    @include sm {
+      text-align: center;
+    }
+    @include md {
+      text-align: center;
+    }
+
+    p {
+      @include sm {
+        font-size: 0.85rem;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+      @include sm {
+        width: 20%;
+      }
+    }
+  }
+  .cardBody {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    margin-top: 9px;
+  }
+}

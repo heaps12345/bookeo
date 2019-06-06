@@ -1,0 +1,93 @@
+#userRentals {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .alert-warning {
+    @include sm {
+      font-size: 0.75rem;
+    }
+  }
+
+  .card-block {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .btn-main {
+    font-size: 1rem;
+    @include sm {
+      font-size: 0.5rem;
+      margin-top: 2em;
+    }
+  }
+
+  .card-footer {
+    font-size: 14px;
+  }
+
+  .btn-bookings {
+    border-color: $mainColor;
+    background-color: transparent;
+    color: $mainColor;
+
+    &:hover,
+    &:focus {
+      border-color: $mainColor !important;
+      background-color: transparent !important;
+      color: $mainColor !important;
+    }
+  }
+
+  .btn-danger,
+  .btn-success {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .deleteMenu {
+    margin-top: 5px;
+  }
+
+  .btn-main {
+    margin-right: 10px;
+  }
+
+  .toBeDeleted {
+    border-color: red;
+  }
+}
+#userBookings {
+  .alert-warning {
+    @include sm {
+      font-size: 0.75rem;
+    }
+  }
+  .btn-main {
+    font-size: 1rem;
+    @include sm {
+      font-size: 0.5rem;
+      margin-top: 2em;
+    }
+    @include md {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.rental-booking-modal {
+  .btn-main {
+    font-size: 14px;
+    color: white;
+  }
+
+  .bookings-inner-container {
+    p {
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+  }
+}

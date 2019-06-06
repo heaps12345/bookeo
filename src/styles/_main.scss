@@ -1,0 +1,53 @@
+@import 'variables.scss';
+@import '_mixins.scss';
+@import 'header/header.scss';
+@import '../components/Rental/rentalListing.scss';
+@import '../components/Rental/rentalDetails/rentalDetail.scss';
+@import '../components/auth/auth.scss';
+@import '../components/booking/booking.scss';
+@import '../components/Rental/manageRental/manageRentals.scss';
+@import '../components/payment/payment.scss';
+
+.page-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.apartment {
+  color: #a72da3;
+}
+
+.house {
+  color: #bf1818;
+}
+
+.condo {
+  color: #d68000;
+}
+
+.clickable {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fa,
+.fas,
+.fab {
+  color: $mainText;
+}
+.btn-main {
+  background-color: $mainColor !important;
+  border-color: $mainColor !important;
+  color: #ffffff !important;
+
+  font-size: 20px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $mainColor;
+    border-color: $mainColor;
+  }
+}
