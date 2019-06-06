@@ -64,7 +64,7 @@ class RentalDetail extends Component {
                               <div className="col-md-10">
                                 <div>
                                   <strong>{review.username}</strong>
-                                  {console.log(review)}
+                      
                                   <div className="review-section">
                                     <StarRatingComponent
                                       className="detail-stars"
