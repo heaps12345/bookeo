@@ -536,6 +536,13 @@
     background-color: #ff373f;
     border-color: #ff373f; }
 
+.loadingContainer {
+  width: 100%;
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 body {
   color: red;
   font-size: 20px; }

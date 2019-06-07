@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RentalCard from './RentalCard';
 import { connect } from 'react-redux';
 import { fetchRentals, getAvgReviews } from '../../actions';
+import Loader from 'react-loader-spinner';
 
 class RentalList extends Component {
   state = {};
@@ -28,12 +29,21 @@ class RentalList extends Component {
   }
 
   render() {
+    const { rentals } = this.props;
     return (
       <section id="rentalListing">
         <h1 className="page-title">
-          <span className='clonebnb'>Clonebnb</span> Book unique homes and experience a city like a local.
+          <span className="clonebnb">Clonebnb</span> Book unique homes and experience a city like a local.
         </h1>
-        <div className="row">{this.renderRentals()}</div>
+        <div className="row">
+          {rentals.length > 0 ? (
+            this.renderRentals()
+          ) : (
+            <div className="loadingContainer">
+              <Loader type="Oval" color="#ff373f" height="50" width="50" />
+            </div>
+          )}
+        </div>
       </section>
     );
   }

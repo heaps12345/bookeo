@@ -130,7 +130,7 @@ class CreateRental extends Component {
                   errors={errors}
                 />
                 <TextFieldGroup
-                  label="Daily rate"
+                  label="Daily rate ($)"
                   name="dailyRate"
                   onChange={this.onChange}
                   value={this.state.dailyRate}

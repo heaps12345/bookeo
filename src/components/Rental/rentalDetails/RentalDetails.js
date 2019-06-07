@@ -7,6 +7,7 @@ import RentalDetailMap from './RentalDetailMap';
 import Booking from '../../booking/Booking';
 import StarRatingComponent from 'react-star-rating-component';
 import moment from 'moment';
+import Loader from 'react-loader-spinner';
 
 class RentalDetail extends Component {
   state = {};
@@ -64,7 +65,7 @@ class RentalDetail extends Component {
                               <div className="col-md-10">
                                 <div>
                                   <strong>{review.username}</strong>
-                      
+
                                   <div className="review-section">
                                     <StarRatingComponent
                                       className="detail-stars"
@@ -100,7 +101,11 @@ class RentalDetail extends Component {
         </section>
       );
     } else {
-      return <h1>Loading...</h1>;
+      return (
+        <div className="loadingContainer">
+          <Loader type="Oval" color="#ff373f" height="50" width="50" />
+        </div>
+      );
     }
   }
 }

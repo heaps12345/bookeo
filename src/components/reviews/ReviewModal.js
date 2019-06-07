@@ -55,7 +55,7 @@ class ReviewModal extends Component {
               className="form-control"
               placeholder="Tell us about your experience"
               rows={3}
-              col={50}
+              col={75}
               onChange={this.handleTextChange}
             />
             <StarRatings
@@ -86,7 +86,7 @@ class ReviewModal extends Component {
 
 const mapStateToProps = state => ({
   bookings: state.bookings.data,
-  auth:state.auth
+  auth: state.auth
 });
 export default connect(
   mapStateToProps,
