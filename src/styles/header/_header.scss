@@ -32,7 +32,7 @@
     }
 
     @include md {
-      margin-right: -1em;
+      margin-right: -0.5em;
       margin-left: 0.5em;
     }
     @include lg {
@@ -98,13 +98,13 @@
 }
 
 .logo {
-  width: 20%;
+  width: 24%;
 
   @include sm {
-    width: 50%;
+    width: 75%;
   }
   @include md {
-    width: 33%;
+    width: 45%;
   }
 }
 

@@ -18,7 +18,7 @@ class Header extends Component {
       <nav className="navbar navbar-light navbar-expand-lg">
         <div className="container">
           <Link className="navbar-brand" to="/rentals">
-            <img src={process.env.PUBLIC_URL + '/img/logo5.png'} className="logo" alt="" />
+            <img src={process.env.PUBLIC_URL + '/img/logo6.png'} className="logo" alt="" />
           </Link>
           <RentalSearchField />
           <button
