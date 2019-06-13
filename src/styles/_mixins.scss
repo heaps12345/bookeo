@@ -3,7 +3,7 @@ $mobileFirst: true;
 $sm: 569px;
 $md: 769px;
 $lg: 1025px;
-$xl: 1281px;
+$xl: 1269px;
 
 // @if $mobileFirst {
 //   $sm: $sm + 1;
@@ -38,7 +38,7 @@ $xl: 1281px;
   }
 }
 @mixin xl {
-  @media (min-width: $xl) {
+  @media (min-width: $lg) and (max-width: $xl) {
     @content;
   }
 }

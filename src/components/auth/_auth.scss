@@ -37,9 +37,16 @@
     letter-spacing: 1px;
 
     @include sm {
-     
       font-size: 24px;
       padding: 20px;
     }
+  }
+}
+
+.search-bar {
+  margin-right: auto;
+  position: relative;
+  @include md {
+    margin-left: -20px;
   }
 }

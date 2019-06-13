@@ -27,15 +27,20 @@
     padding-bottom: 12px;
 
     @include sm {
-      margin-right: -1.5em;
-      margin-left: -13px;
+      margin-right: -0.5rem;
+      margin-left: -9px;
     }
 
     @include md {
-      margin-right: -8em;
+      margin-right: -1em;
+      margin-left: 0.5em;
     }
     @include lg {
-      margin-right: -3.5em;
+      margin-right: -2.5em;
+      margin-left: 0.5em;
+    }
+    @include xl {
+      margin-right: -4em;
     }
   }
 

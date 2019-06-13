@@ -33,7 +33,7 @@ class RentalList extends Component {
     return (
       <section id="rentalListing">
         <h1 className="page-title">
-          <span className="clonebnb">Clonebnb</span> Book unique homes and experience a city like a local.
+          <span className="clonebnb">Bookeo</span> Book unique homes and experience a city like a local.
         </h1>
         <div className="row">
           {rentals.length > 0 ? (

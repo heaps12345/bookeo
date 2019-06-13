@@ -34,7 +34,7 @@ class RentalSearchField extends Component {
   };
   render() {
     return (
-      <div className="form-inline my-2 my-lg-0">
+      <div className="form-inline search-bar my-2 my-lg-0">
         <input
           ref={this.searchField}
           className="form-control mr-sm-2 navbar-search"
@@ -43,9 +43,12 @@ class RentalSearchField extends Component {
           aria-label="Search"
           onKeyPress={e => this.onKeyPress(e)}
         />
-        <button onClick={this.handleSearch} className="btn my-2 my-sm-0 btn-main-search" type="submit">
-          Search
-        </button>{' '}
+        <button onClick={this.handleSearch} className="search__button">
+          <i class="fas fa-search search__icon" />
+        </button>
+        {/* <button `onClick={this.handleSearch}` className="btn my-2 my-sm-0 btn-main-search" type="submit">
+        //   Search
+    // </button>{' '} */}
       </div>
     );
   }
