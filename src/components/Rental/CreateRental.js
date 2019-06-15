@@ -118,9 +118,8 @@ class CreateRental extends Component {
                 />
 
                 <div className="form-group">
-                  <ImageUpload errors={errors} />
-
                   
+                  <ImageUpload errors={errors} />
                 </div>
                 <TextFieldGroup
                   label="Bedrooms"

@@ -256,8 +256,19 @@ export const deleteRental = rentalId => async dispatch => {
 };
 
 export const uploadImage = image => async dispatch => {
+  // const config = {
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //   }
+  // };
+
   const formData = new FormData();
   formData.append('image', image);
+
+  // const body = JSON.stringify({
+  //   img: formData
+  // });
+
   try {
     const res = await axios.post('https://still-castle-84291.herokuapp.com/imageUpload', formData);
     dispatch({

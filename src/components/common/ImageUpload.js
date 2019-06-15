@@ -100,16 +100,15 @@ class ImageUpload extends React.Component {
       this.setState({ croppedImage });
 
       this.reader.readAsDataURL(croppedImage);
+  
     }
   }
 
   onError(err) {
-    
     this.setState({ loading: false, status: 'fail' });
   }
 
   onSuccess() {
-   
     const { img } = this.props;
 
     this.resetToDefaultState('success');
@@ -121,9 +120,11 @@ class ImageUpload extends React.Component {
   async uploadImage() {
     const { croppedImage } = this.state;
 
+ 
     if (croppedImage) {
       this.setState({ loading: true, status: 'init' });
       try {
+        // this.props.uploadImage(this.state.imageBase64);
         this.props.uploadImage(croppedImage);
         await this.onSuccess();
       } catch (err) {
@@ -157,7 +158,6 @@ class ImageUpload extends React.Component {
   }
 
   render() {
-  
     const { selectedFile, imageBase64, crop, initialImageBase64 } = this.state;
 
     return (
