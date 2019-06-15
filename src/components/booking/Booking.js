@@ -46,8 +46,6 @@ class Booking extends Component {
     }
   };
 
-  
-
   checkInvalidDates = date => {
     const mDate = date.format('MM-DD-YYYY');
     return this.bookedUpDates.includes(mDate) || date.diff(moment(), 'days') < 0;
@@ -167,6 +165,7 @@ class Booking extends Component {
                 onChange={this.selectGuests}
                 type="number"
                 className="form-control"
+                min="1"
                 id="guests"
                 aria-describedby="emailHelp"
                 placeholder=""

@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 import { Redirect, withRouter } from 'react-router-dom';
 import ImageUpload from '../common/ImageUpload';
 import TextFieldGroup from '../common/TextFieldGroup';
+
 import SelectListGroup from '../common/SelectListGroup';
 import { createRental, uploadImage } from '../../actions';
+import NumberFieldGroup from '../common/NumberFieldGroup';
 
 class CreateRental extends Component {
   constructor() {
@@ -118,22 +120,23 @@ class CreateRental extends Component {
                 />
 
                 <div className="form-group">
-                  
                   <ImageUpload errors={errors} />
                 </div>
-                <TextFieldGroup
+                <NumberFieldGroup
                   label="Bedrooms"
                   name="bedrooms"
                   onChange={this.onChange}
                   value={this.state.bedrooms}
                   errors={errors}
+                  min="1"
                 />
-                <TextFieldGroup
+                <NumberFieldGroup
                   label="Daily rate ($)"
                   name="dailyRate"
                   onChange={this.onChange}
                   value={this.state.dailyRate}
                   errors={errors}
+                  min="99"
                 />
 
                 <button value="submit" className="btn-main btn">
